@@ -13,34 +13,34 @@ int main()
     {
         
         Dic.menu();
-        cout << endl << "Ââåäèòå íîìåð êîìàíäû¬>";
+        cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ ÐºÐ¾Ð¼Ð°Ð½Ð´Ñ‹Â¬>";
         cin >> command;
 
         switch (command)
         {
         case 1:
             cop = 1;
-            cout << "Óñòðîéñòâî Âêëþ÷åíî!" << endl;
+            cout << "Ð£ÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾ Ð’ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾!" << endl;
             break;
 
         case 2:
             if (cop == 1)
             {
                 cop = 0;
-                cout << "Óñòðîéñòâî âûêëþ÷åíî!" << endl;
+                cout << "Ð£ÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾ Ð²Ñ‹ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾!" << endl;
                 work = 0;
             }
-            else cout << "Óñòðîéñòâî óæå âûêëþ÷åíî!" << endl;
+            else cout << "Ð£ÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾ ÑƒÐ¶Ðµ Ð²Ñ‹ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¾!" << endl;
             break;
 
         case 3:
             Dic.get_volume(vol);
             a = 0;
             Dic.get_a(a);
-            if (vol == 100) cout << "Ìàêñ. Ãðîìêîñòü!";
+            if (vol == 100) cout << "ÐœÐ°ÐºÑ. Ð“Ñ€Ð¾Ð¼ÐºÐ¾ÑÑ‚ÑŒ!";
             else {
                 vol++;
-                cout << "Ãðîìêîñòü " << vol << endl;
+                cout << "Ð“Ñ€Ð¾Ð¼ÐºÐ¾ÑÑ‚ÑŒ " << vol << endl;
             }
             sch++;
             if (sch % 2 == 1) b++;
@@ -51,10 +51,10 @@ int main()
             Dic.get_volume(vol);
             a = 1;
             Dic.get_a(a);
-            if (vol == 0) cout << "Ãðîìêîñòü 0" << endl;
+            if (vol == 0) cout << "Ð“Ñ€Ð¾Ð¼ÐºÐ¾ÑÑ‚ÑŒ 0" << endl;
             else {
                 vol--;
-                cout << "Ãðîìêîñòü " << vol << endl;
+                cout << "Ð“Ñ€Ð¾Ð¼ÐºÐ¾ÑÑ‚ÑŒ " << vol << endl;
             }
             sch++;
             if (sch % 2 == 1) b++;
@@ -62,16 +62,16 @@ int main()
             break;
 
         case 5:
-            cout << "Óñòðîéñòâî áóäåò ðàáîòàòü " << Dic.get_timeWork() << " ÷àñîâ" << endl;
+            cout << "Ð£ÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾ Ð±ÑƒÐ´ÐµÑ‚ Ñ€Ð°Ð±Ð¾Ñ‚Ð°Ñ‚ÑŒ " << Dic.get_timeWork() << " Ñ‡Ð°ÑÐ¾Ð²" << endl;
             break;
 
         case 6:
-            cout << "Çàðÿä áàòàðåè " << Dic.get_BatCap() << "" << endl;
+            cout << "Ð—Ð°Ñ€ÑÐ´ Ð±Ð°Ñ‚Ð°Ñ€ÐµÐ¸ " << Dic.get_BatCap() << "" << endl;
             break;
         }
 
-        if (Dic.get_BatCap() == 15) cout << "Ïðîöåíò çàðÿäà áàòàðåè 15% Ðåêîìåíäóåì ïîäêëþ÷èòü çàðÿäíîå óñòðîéñòâî" << endl;
-        if (Dic.get_BatCap() == 5) cout << "Ïðîöåíò çàðÿäà áàòàðåè 5% ïîäêëþ÷èòå çàðÿäíîå óñòðîéñòâî" << endl;
+        if (Dic.get_BatCap() == 15) cout << "ÐŸÑ€Ð¾Ñ†ÐµÐ½Ñ‚ Ð·Ð°Ñ€ÑÐ´Ð° Ð±Ð°Ñ‚Ð°Ñ€ÐµÐ¸ 15% Ð ÐµÐºÐ¾Ð¼ÐµÐ½Ð´ÑƒÐµÐ¼ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð·Ð°Ñ€ÑÐ´Ð½Ð¾Ðµ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾" << endl;
+        if (Dic.get_BatCap() == 5) cout << "ÐŸÑ€Ð¾Ñ†ÐµÐ½Ñ‚ Ð·Ð°Ñ€ÑÐ´Ð° Ð±Ð°Ñ‚Ð°Ñ€ÐµÐ¸ 5% Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚Ðµ Ð·Ð°Ñ€ÑÐ´Ð½Ð¾Ðµ ÑƒÑÑ‚Ñ€Ð¾Ð¹ÑÑ‚Ð²Ð¾" << endl;
         if (Dic.get_BatCap() <= 0) work = 0;
     }
     return 0;
